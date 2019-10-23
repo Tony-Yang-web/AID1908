@@ -39,3 +39,5 @@ except Exception as e:
 # 关闭游标和数据库连接
 cur.close()
 db.close()
+
+#未发放的广发国际环境恢复速度
