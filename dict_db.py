@@ -27,6 +27,7 @@ for line in fr:
     # mean = line.split(' ', 1)[-1].strip()
     # args_list.append((word, mean))
 fr.close()
+#异常报错处理
 try:
 
     sql = "insert into words (word,mean) values (%s,%s); "
@@ -39,6 +40,6 @@ except Exception as e:
 # 关闭游标和数据库连接
 cur.close()
 db.close()
-print('hello world')
+
 
 #未发放的广发国际环境恢复速度
